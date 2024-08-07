@@ -1,0 +1,44 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    background-color: #e2edff;
+}
+
+#projects {
+    background-color: #e2edff;
+}
+
+section {
+    padding-top: 5rem;
+    margin-bottom: 0;
+    /* Pastikan margin bawah dihapus */
+}
+
+/* Pastikan SVG di bagian bawah section diatur dengan benar */
+section svg {
+    display: block;
+    margin-bottom: -5px;
+    /* Atur margin sesuai kebutuhan untuk menghindari celah */
+}
+
+footer {
+    margin-top: 0;
+    padding-top: 0;
+    border: none;
+    background-color: #0d6efd;
+    color: white;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+/* Tambahan styling untuk memastikan tidak ada margin di elemen terakhir */
+section:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
