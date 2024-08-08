@@ -16,3 +16,17 @@ function sendMessage(event) {
   // Buka email
   window.location.href = mailtoUrl;
 }
+
+document.addEventListener("click", function (event) {
+  var navbarNav = document.getElementById("navbarNav");
+  var navbarToggler = document.querySelector(".navbar-toggler");
+
+  if (
+    navbarNav.classList.contains("show") &&
+    !navbarNav.contains(event.target) &&
+    !navbarToggler.contains(event.target)
+  ) {
+    var collapse = new bootstrap.Collapse(navbarNav);
+    collapse.hide();
+  }
+});
